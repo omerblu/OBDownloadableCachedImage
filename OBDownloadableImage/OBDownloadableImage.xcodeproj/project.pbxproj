@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8915540A1C9165560077E19E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 891554091C9165560077E19E /* main.m */; };
+		8915540D1C9165560077E19E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8915540C1C9165560077E19E /* AppDelegate.m */; };
+		891554101C9165560077E19E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8915540F1C9165560077E19E /* ViewController.m */; };
+		891554131C9165560077E19E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891554111C9165560077E19E /* Main.storyboard */; };
+		891554151C9165560077E19E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891554141C9165560077E19E /* Assets.xcassets */; };
+		891554181C9165560077E19E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891554161C9165560077E19E /* LaunchScreen.storyboard */; };
+		891554221C9166780077E19E /* OBDownloadableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 891554211C9166780077E19E /* OBDownloadableImageView.m */; };
+		891554261C9167920077E19E /* OBImageDownloaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 891554251C9167920077E19E /* OBImageDownloaderManager.m */; };
+		891554291C9167BD0077E19E /* OBImageDownloaderCacheData.m in Sources */ = {isa = PBXBuildFile; fileRef = 891554281C9167BD0077E19E /* OBImageDownloaderCacheData.m */; };
+		8915542E1C916D980077E19E /* OBDownloadTaskFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8915542D1C916D980077E19E /* OBDownloadTaskFactory.m */; };
+		891554311C916DDC0077E19E /* OBDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 891554301C916DDC0077E19E /* OBDownloadTask.m */; };
+		8915543C1C91734B0077E19E /* OBDownloadableImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8915543B1C91734B0077E19E /* OBDownloadableImageTests.m */; };
+		891554461C9174240077E19E /* OBDownloadTaskFactoryFake.m in Sources */ = {isa = PBXBuildFile; fileRef = 891554451C9174240077E19E /* OBDownloadTaskFactoryFake.m */; };
+		891554491C9174400077E19E /* OBDownloadTaskFake.m in Sources */ = {isa = PBXBuildFile; fileRef = 891554481C9174400077E19E /* OBDownloadTaskFake.m */; };
+		8915544C1C9176480077E19E /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 8915544A1C9176480077E19E /* test.png */; };
+		8915544D1C9176480077E19E /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8915544B1C9176480077E19E /* test.txt */; };
+		8915544F1C917BD10077E19E /* placeholderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8915544E1C917BD10077E19E /* placeholderImage.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8915543E1C91734B0077E19E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 891553FD1C9165560077E19E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 891554041C9165560077E19E;
+			remoteInfo = OBDownloadableImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		891554051C9165560077E19E /* OBDownloadableImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OBDownloadableImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		891554091C9165560077E19E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8915540B1C9165560077E19E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = OBDownloadableImage/AppDelegate.h; sourceTree = "<group>"; };
+		8915540C1C9165560077E19E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = OBDownloadableImage/AppDelegate.m; sourceTree = "<group>"; };
+		8915540E1C9165560077E19E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = OBDownloadableImage/ViewController.h; sourceTree = "<group>"; };
+		8915540F1C9165560077E19E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = OBDownloadableImage/ViewController.m; sourceTree = "<group>"; };
+		891554121C9165560077E19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		891554141C9165560077E19E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OBDownloadableImage/Assets.xcassets; sourceTree = "<group>"; };
+		891554171C9165560077E19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		891554191C9165560077E19E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = OBDownloadableImage/Info.plist; sourceTree = "<group>"; };
+		891554201C9166780077E19E /* OBDownloadableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OBDownloadableImageView.h; path = OBDownloadableImageView/OBDownloadableImageView.h; sourceTree = "<group>"; };
+		891554211C9166780077E19E /* OBDownloadableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OBDownloadableImageView.m; path = OBDownloadableImageView/OBDownloadableImageView.m; sourceTree = "<group>"; };
+		891554231C9166B50077E19E /* OBDownloadableImageViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OBDownloadableImageViewProtocol.h; path = OBDownloadableImageView/OBDownloadableImageViewProtocol.h; sourceTree = "<group>"; };
+		891554241C9167920077E19E /* OBImageDownloaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OBImageDownloaderManager.h; path = OBDownloadableImageView/OBImageDownloaderManager.h; sourceTree = "<group>"; };
+		891554251C9167920077E19E /* OBImageDownloaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OBImageDownloaderManager.m; path = OBDownloadableImageView/OBImageDownloaderManager.m; sourceTree = "<group>"; };
+		891554271C9167BD0077E19E /* OBImageDownloaderCacheData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OBImageDownloaderCacheData.h; path = OBDownloadableImageView/OBImageDownloaderCacheData.h; sourceTree = "<group>"; };
+		891554281C9167BD0077E19E /* OBImageDownloaderCacheData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OBImageDownloaderCacheData.m; path = OBDownloadableImageView/OBImageDownloaderCacheData.m; sourceTree = "<group>"; };
+		8915542A1C9167F50077E19E /* OBDownloadTaskProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OBDownloadTaskProtocol.h; path = OBDownloadableImageView/OBDownloadTaskProtocol.h; sourceTree = "<group>"; };
+		8915542B1C91690E0077E19E /* OBImageDownloaderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OBImageDownloaderProtocol.h; path = OBDownloadableImageView/OBImageDownloaderProtocol.h; sourceTree = "<group>"; };
+		8915542C1C916D980077E19E /* OBDownloadTaskFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OBDownloadTaskFactory.h; path = OBDownloadableImageView/OBDownloadTaskFactory.h; sourceTree = "<group>"; };
+		8915542D1C916D980077E19E /* OBDownloadTaskFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OBDownloadTaskFactory.m; path = OBDownloadableImageView/OBDownloadTaskFactory.m; sourceTree = "<group>"; };
+		8915542F1C916DDC0077E19E /* OBDownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OBDownloadTask.h; path = OBDownloadableImageView/OBDownloadTask.h; sourceTree = "<group>"; };
+		891554301C916DDC0077E19E /* OBDownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OBDownloadTask.m; path = OBDownloadableImageView/OBDownloadTask.m; sourceTree = "<group>"; };
+		891554321C916EBC0077E19E /* OBDownloadTaskFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OBDownloadTaskFactoryProtocol.h; path = OBDownloadableImageView/OBDownloadTaskFactoryProtocol.h; sourceTree = "<group>"; };
+		891554391C91734B0077E19E /* OBDownloadableImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBDownloadableImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8915543B1C91734B0077E19E /* OBDownloadableImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBDownloadableImageTests.m; sourceTree = "<group>"; };
+		8915543D1C91734B0077E19E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		891554441C9174240077E19E /* OBDownloadTaskFactoryFake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBDownloadTaskFactoryFake.h; sourceTree = "<group>"; };
+		891554451C9174240077E19E /* OBDownloadTaskFactoryFake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBDownloadTaskFactoryFake.m; sourceTree = "<group>"; };
+		891554471C9174400077E19E /* OBDownloadTaskFake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBDownloadTaskFake.h; sourceTree = "<group>"; };
+		891554481C9174400077E19E /* OBDownloadTaskFake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBDownloadTaskFake.m; sourceTree = "<group>"; };
+		8915544A1C9176480077E19E /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		8915544B1C9176480077E19E /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		8915544E1C917BD10077E19E /* placeholderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderImage.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		891554021C9165560077E19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891554361C91734B0077E19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		891553FC1C9165560077E19E = {
+			isa = PBXGroup;
+			children = (
+				891554071C9165560077E19E /* OBDownloadableImage */,
+				8915540B1C9165560077E19E /* AppDelegate.h */,
+				8915540C1C9165560077E19E /* AppDelegate.m */,
+				8915540E1C9165560077E19E /* ViewController.h */,
+				8915540F1C9165560077E19E /* ViewController.m */,
+				891554111C9165560077E19E /* Main.storyboard */,
+				891554141C9165560077E19E /* Assets.xcassets */,
+				891554161C9165560077E19E /* LaunchScreen.storyboard */,
+				891554191C9165560077E19E /* Info.plist */,
+				8915543A1C91734B0077E19E /* OBDownloadableImageTests */,
+				891554081C9165560077E19E /* Supporting Files */,
+				891554061C9165560077E19E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		891554061C9165560077E19E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				891554051C9165560077E19E /* OBDownloadableImage.app */,
+				891554391C91734B0077E19E /* OBDownloadableImageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		891554071C9165560077E19E /* OBDownloadableImage */ = {
+			isa = PBXGroup;
+			children = (
+				891554331C9172580077E19E /* Protocols */,
+				891554341C9172790077E19E /* Factory */,
+				891554201C9166780077E19E /* OBDownloadableImageView.h */,
+				891554211C9166780077E19E /* OBDownloadableImageView.m */,
+				891554241C9167920077E19E /* OBImageDownloaderManager.h */,
+				891554251C9167920077E19E /* OBImageDownloaderManager.m */,
+				891554271C9167BD0077E19E /* OBImageDownloaderCacheData.h */,
+				891554281C9167BD0077E19E /* OBImageDownloaderCacheData.m */,
+				8915542F1C916DDC0077E19E /* OBDownloadTask.h */,
+				891554301C916DDC0077E19E /* OBDownloadTask.m */,
+			);
+			path = OBDownloadableImage;
+			sourceTree = "<group>";
+		};
+		891554081C9165560077E19E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8915544E1C917BD10077E19E /* placeholderImage.png */,
+				891554091C9165560077E19E /* main.m */,
+			);
+			name = "Supporting Files";
+			path = OBDownloadableImage;
+			sourceTree = "<group>";
+		};
+		891554331C9172580077E19E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8915542A1C9167F50077E19E /* OBDownloadTaskProtocol.h */,
+				891554321C916EBC0077E19E /* OBDownloadTaskFactoryProtocol.h */,
+				8915542B1C91690E0077E19E /* OBImageDownloaderProtocol.h */,
+				891554231C9166B50077E19E /* OBDownloadableImageViewProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		891554341C9172790077E19E /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				8915542D1C916D980077E19E /* OBDownloadTaskFactory.m */,
+				8915542C1C916D980077E19E /* OBDownloadTaskFactory.h */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		8915543A1C91734B0077E19E /* OBDownloadableImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				891554431C9173EC0077E19E /* Fakes */,
+				8915543B1C91734B0077E19E /* OBDownloadableImageTests.m */,
+				8915543D1C91734B0077E19E /* Info.plist */,
+			);
+			path = OBDownloadableImageTests;
+			sourceTree = "<group>";
+		};
+		891554431C9173EC0077E19E /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				8915544A1C9176480077E19E /* test.png */,
+				8915544B1C9176480077E19E /* test.txt */,
+				891554441C9174240077E19E /* OBDownloadTaskFactoryFake.h */,
+				891554451C9174240077E19E /* OBDownloadTaskFactoryFake.m */,
+				891554471C9174400077E19E /* OBDownloadTaskFake.h */,
+				891554481C9174400077E19E /* OBDownloadTaskFake.m */,
+			);
+			name = Fakes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		891554041C9165560077E19E /* OBDownloadableImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8915541C1C9165560077E19E /* Build configuration list for PBXNativeTarget "OBDownloadableImage" */;
+			buildPhases = (
+				891554011C9165560077E19E /* Sources */,
+				891554021C9165560077E19E /* Frameworks */,
+				891554031C9165560077E19E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OBDownloadableImage;
+			productName = OBDownloadableImage;
+			productReference = 891554051C9165560077E19E /* OBDownloadableImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		891554381C91734B0077E19E /* OBDownloadableImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 891554401C91734B0077E19E /* Build configuration list for PBXNativeTarget "OBDownloadableImageTests" */;
+			buildPhases = (
+				891554351C91734B0077E19E /* Sources */,
+				891554361C91734B0077E19E /* Frameworks */,
+				891554371C91734B0077E19E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8915543F1C91734B0077E19E /* PBXTargetDependency */,
+			);
+			name = OBDownloadableImageTests;
+			productName = OBDownloadableImageTests;
+			productReference = 891554391C91734B0077E19E /* OBDownloadableImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		891553FD1C9165560077E19E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Omer Blumenkrunz";
+				TargetAttributes = {
+					891554041C9165560077E19E = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					891554381C91734B0077E19E = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 891554041C9165560077E19E;
+					};
+				};
+			};
+			buildConfigurationList = 891554001C9165560077E19E /* Build configuration list for PBXProject "OBDownloadableImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 891553FC1C9165560077E19E;
+			productRefGroup = 891554061C9165560077E19E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				891554041C9165560077E19E /* OBDownloadableImage */,
+				891554381C91734B0077E19E /* OBDownloadableImageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		891554031C9165560077E19E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891554181C9165560077E19E /* LaunchScreen.storyboard in Resources */,
+				8915544F1C917BD10077E19E /* placeholderImage.png in Resources */,
+				891554151C9165560077E19E /* Assets.xcassets in Resources */,
+				891554131C9165560077E19E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891554371C91734B0077E19E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8915544D1C9176480077E19E /* test.txt in Resources */,
+				8915544C1C9176480077E19E /* test.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		891554011C9165560077E19E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891554291C9167BD0077E19E /* OBImageDownloaderCacheData.m in Sources */,
+				891554101C9165560077E19E /* ViewController.m in Sources */,
+				8915540D1C9165560077E19E /* AppDelegate.m in Sources */,
+				8915540A1C9165560077E19E /* main.m in Sources */,
+				8915542E1C916D980077E19E /* OBDownloadTaskFactory.m in Sources */,
+				891554221C9166780077E19E /* OBDownloadableImageView.m in Sources */,
+				891554261C9167920077E19E /* OBImageDownloaderManager.m in Sources */,
+				891554311C916DDC0077E19E /* OBDownloadTask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891554351C91734B0077E19E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891554491C9174400077E19E /* OBDownloadTaskFake.m in Sources */,
+				8915543C1C91734B0077E19E /* OBDownloadableImageTests.m in Sources */,
+				891554461C9174240077E19E /* OBDownloadTaskFactoryFake.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8915543F1C91734B0077E19E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 891554041C9165560077E19E /* OBDownloadableImage */;
+			targetProxy = 8915543E1C91734B0077E19E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		891554111C9165560077E19E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				891554121C9165560077E19E /* Base */,
+			);
+			name = Main.storyboard;
+			path = OBDownloadableImage;
+			sourceTree = "<group>";
+		};
+		891554161C9165560077E19E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				891554171C9165560077E19E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = OBDownloadableImage;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8915541A1C9165560077E19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8915541B1C9165560077E19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8915541D1C9165560077E19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OBDownloadableImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OBDownloadableImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8915541E1C9165560077E19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OBDownloadableImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OBDownloadableImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		891554411C91734B0077E19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OBDownloadableImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OBDownloadableImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OBDownloadableImage.app/OBDownloadableImage";
+			};
+			name = Debug;
+		};
+		891554421C91734B0077E19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OBDownloadableImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OBDownloadableImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OBDownloadableImage.app/OBDownloadableImage";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		891554001C9165560077E19E /* Build configuration list for PBXProject "OBDownloadableImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8915541A1C9165560077E19E /* Debug */,
+				8915541B1C9165560077E19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8915541C1C9165560077E19E /* Build configuration list for PBXNativeTarget "OBDownloadableImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8915541D1C9165560077E19E /* Debug */,
+				8915541E1C9165560077E19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		891554401C91734B0077E19E /* Build configuration list for PBXNativeTarget "OBDownloadableImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				891554411C91734B0077E19E /* Debug */,
+				891554421C91734B0077E19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 891553FD1C9165560077E19E /* Project object */;
+}

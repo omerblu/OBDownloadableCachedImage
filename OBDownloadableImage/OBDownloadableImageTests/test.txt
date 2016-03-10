@@ -1,0 +1,41 @@
+D/CordovaWebView(26325): CordovaWebView is running on device made by: asus
+D/JsMessageQueue(26325): Set native->JS mode to 2
+D/CordovaActivity(26325): CordovaActivity.init()
+D/CordovaWebView(26325): >>> loadUrl(file:///android_asset/www/index.html)
+D/PluginManager(26325): init()
+D/dalvikvm(26274): GC_CONCURRENT freed 348K, 4% free 9489K/9876K, paused 14ms+5ms, total 127ms
+D/dalvikvm(26274): WAIT_FOR_CONCURRENT_GC blocked 75ms
+W/System.err(26325): java.lang.ClassNotFoundException: com.couchbase.cblite.phonegap.CBLite
+W/System.err(26325): 	at java.lang.Class.classForName(Native Method)
+W/System.err(26325): 	at java.lang.Class.forName(Class.java:251)
+W/System.err(26325): 	at java.lang.Class.forName(Class.java:216)
+W/System.err(26325): 	at org.apache.cordova.PluginEntry.getClassByName(PluginEntry.java:117)
+W/System.err(26325): 	at org.apache.cordova.PluginEntry.createPlugin(PluginEntry.java:93)
+W/System.err(26325): 	at org.apache.cordova.PluginManager.startupPlugins(PluginManager.java:195)
+W/System.err(26325): 	at org.apache.cordova.PluginManager.init(PluginManager.java:106)
+W/System.err(26325): 	at org.apache.cordova.CordovaWebView.loadUrlIntoView(CordovaWebView.java:457)
+W/System.err(26325): 	at org.apache.cordova.CordovaWebView.loadUrl(CordovaWebView.java:419)
+W/System.err(26325): 	at org.apache.cordova.CordovaActivity.loadUrl(CordovaActivity.java:437)
+W/System.err(26325): 	at com.couchbase.todolite.TodoLite.onCreate(TodoLite.java:33)
+W/System.err(26325): 	at android.app.Activity.performCreate(Activity.java:5231)
+W/System.err(26325): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+W/System.err(26325): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2159)
+W/System.err(26325): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2245)
+W/System.err(26325): 	at android.app.ActivityThread.access$800(ActivityThread.java:135)
+W/System.err(26325): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1196)
+W/System.err(26325): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+W/System.err(26325): 	at android.os.Looper.loop(Looper.java:136)
+W/System.err(26325): 	at android.app.ActivityThread.main(ActivityThread.java:5017)
+W/System.err(26325): 	at java.lang.reflect.Method.invokeNative(Native Method)
+W/System.err(26325): 	at java.lang.reflect.Method.invoke(Method.java:515)
+W/System.err(26325): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+W/System.err(26325): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+W/System.err(26325): 	at dalvik.system.NativeStart.main(Native Method)
+W/System.err(26325): Caused by: java.lang.NoClassDefFoundError: com/couchbase/cblite/phonegap/CBLite
+W/System.err(26325): 	... 25 more
+W/System.err(26325): Caused by: java.lang.ClassNotFoundException: Didn't find class "com.couchbase.cblite.phonegap.CBLite" on path: DexPathList[[zip file "/data/app/com.couchbase.todolite-1.apk"],nativeLibraryDirectories=[/data/app-lib/com.couchbase.todolite-1, /vendor/lib, /system/lib]]
+W/System.err(26325): 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+W/System.err(26325): 	at java.lang.ClassLoader.loadClass(ClassLoader.java:497)
+W/System.err(26325): 	at java.lang.ClassLoader.loadClass(ClassLoader.java:457)
+W/System.err(26325): 	... 25 more
+I/System.out(26325): Error adding plugin com.couchbase.cblite.phonegap.CBLite.
