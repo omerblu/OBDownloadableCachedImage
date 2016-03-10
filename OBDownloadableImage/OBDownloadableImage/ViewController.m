@@ -18,9 +18,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    //Example of use
+    
+    //Use from storyboard
     self.downloadableImage.image = [UIImage imageNamed:@"placeholderImage"];
     [self.downloadableImage downloadImageFromURL:[NSURL URLWithString:@"https://privacy.google.com/images/landing/10_privacy1_450_w.png"] stopPreviousDownloadImage:YES];
+    
+    //Use OBDownloadableImageView directly
+    OBDownloadableImageView * image = [OBDownloadableImageView new];
+    [image downloadImageFromURL:[NSURL URLWithString:@"https://privacy.google.com/images/landing/10_privacy1_450_w.png"] stopPreviousDownloadImage:NO];
+    
+    
+    //Use like an UIImageView
+    OBDownloadableImageView * imageA = [[OBDownloadableImageView alloc]initWithImage:[UIImage imageNamed:@"placeholderImage"]];
+    [imageA downloadImageFromURL:[NSURL URLWithString:@"https://privacy.google.com/images/landing/10_privacy1_450_w.png"] stopPreviousDownloadImage:NO];
+
+    
 }
 
 - (void)didReceiveMemoryWarning {

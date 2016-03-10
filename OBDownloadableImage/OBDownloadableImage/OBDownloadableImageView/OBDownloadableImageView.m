@@ -25,9 +25,9 @@
 
 
 /**
- * \brief Updates the OBImageDownloader - used in Reusable Cells with option to stop download for unsean cells
+ * \brief Updates the OBImageDownloader - Starts the download
  * \param url NSURL the image url
- * \param stopPreviousDownloadImage BOOL whether to stop other downloads for reusable cells
+ * \param stopPreviousDownloadImage BOOL whether to stop other downloads for reusable OBDownloadableImageView (e.g. UITableViewCelles)
  */
 - (void)downloadImageFromURL:(NSURL *) url stopPreviousDownloadImage:(BOOL)stopPreviousDownloadImage
 {
