@@ -1,6 +1,12 @@
 # OBDownloadableCachedImage
 This is an iOS Objective-C component that downloads and caches images, and is used as an UIImageView subclass
 
+*One HTTP request per URL
+*Upon object reuse API lets you choose if you want to stop unfinished download
+*Image is cached to app cache directory
+*You can set placeholder image
+*Can be used in nib/storyboard 
+
 You can use it just by taking the folder to your project:
 OBDownloadableCachedImage/OBDownloadableImage/OBDownloadableImage/OBDownloadableImageView/
 
